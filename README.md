@@ -1,6 +1,6 @@
 <h1>Danflix</h1>
 
-<h3>Ferramentas uliziadas</h3>
+<h3>Ferramentas</h3>
 
 <ul>
   <li>Bootstrap na elaboração do projeto;</li>
