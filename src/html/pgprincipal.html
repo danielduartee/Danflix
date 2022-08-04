@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pgprincipal.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/icon.png" />
+    <title>DanFlix: Pagina Principal</title>
+</head>
+
+<body>
+
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
+            <div class="container-fluid">
+                <img src="../assets/logo.png" class="logo-nav ms-4">
+                <button class="navbar-toggler btn-danger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ms-4" aria-current="page" href="./contactPage.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active ms-4" aria-current="page" href="./paginaBusca.html">Buscar Filme</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+  </header>
+  <main>
+    <section class="main-carroussel">
+      <div id="progressbar"></div>
+      <div id="scrollPath"></div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/avengers-carroussel-inicial.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/aquaman-carroussel-inicial.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/cruella-carroussel-inicial.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="movies-carroussel justify-content-center pt-4 m-0">
+      <div class="container-fluid justify-content-center">
+        <div class="row">
+          <h2>Ação & Aventura</h2>
+          <br>
+          <div class="caroussel">
+            <div><img data-bs-toggle="modal"
+              data-bs-target="#exampleModal" onclick="filmesPagina('Avengers: Endgame')" src="../assets/filmes/acao1.jpg"></div>
+            <div><img data-bs-toggle="modal"
+              data-bs-target="#exampleModal" onclick="filmesPagina('Aquaman')" src="../assets/filmes/acao2.jpg"></div>
+            <div><img data-bs-toggle="modal"
+              data-bs-target="#exampleModal" onclick="filmesPagina('Deadpool')" src="../assets/filmes/acao3.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid justify-content-center">
+        <div class="row">
+        <h2>Suspense & Terror</h2>
+        <br>
+        <div class="caroussel">
+          <div><img data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="filmesPagina('The nun')" src="../assets/filmes/terror1.jpg"></div>
+          <div><img data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="filmesPagina('The colony')" src="../assets/filmes/terror2.jpg"></div>
+          <div><img  data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="filmesPagina('The purge: Anarchy')" src="../assets/filmes/terror3.jpg"></div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <h2>Comédia</h2>
+        <br>
+        <div class="caroussel">
+          <div><img  data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="filmesPagina('White Chicks')" src="../assets/filmes/comedia1.jpg"></div>
+          <div><img  data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="filmesPagina('Scary Movie')" src="../assets/filmes/comedia2.jpg"></div>
+          <div><img data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onclick="filmesPagina('American pie')" src="../assets/filmes/comedia3.jpg"></div>
+        </div>
+    </div>
+    </section>
+  </main>
+      
+    <footer>
+        <div class="text-center p-4 bg-black text-light fixed-bottom mt-5">
+            © DanFlix 2022
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tituloApi"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div id="posterApi"></div>
+                    <div>
+                        <h3 id="diretorApi"></h3>
+                        <h3 id="anoApi"></h3>
+                        <h3 id="generoApi"></h3>
+                        <h3 id="lancamentoApi"></h3>
+                        <h3 id="sinopseApi"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" 
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" 
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script src="../js/pgprincipal.js"></script>
+    <script src="../js/buscaApiOmdb/controller.js"></script>
+    <script src="../js/buscaApiOmdb/model.js"></script>
+    <script src="../js/buscaApiOmdb/view.js"></script>
+</body>
+</html>
